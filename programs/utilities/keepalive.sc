@@ -3,7 +3,7 @@
 
 __config() -> {'scope' -> 'global'};
 
-__spawn_players() -> (
+__spawn_players(/player Grian spawn) -> (
    data = load_app_data();
    if (data && data:'players',
       data = parse_nbt(data:'players');
